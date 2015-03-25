@@ -45,6 +45,7 @@ public class MigratorRegistry {
 	
 	static {
 		registerMigrator(new UserDataMigrator());
+		registerMigrator(new EnderChestMigrator());
 	}
 	
 }

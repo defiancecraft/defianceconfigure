@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.defiancecraft</groupId>
   <artifactId>DefianceConfigure</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <name>DefianceConfigure</name>
   <description>Command line utility to configure servers, databases, etc.</description>
   <build>
@@ -41,8 +41,6 @@
             </goals>
             <configuration>
               <artifactSet>
-                <excludes>
-                </excludes>
               </artifactSet>
             </configuration>
           </execution>
@@ -54,6 +52,14 @@
   	<repository>
   	  <id>apache-snapshot-repo</id>
   	  <url>http://repository.apache.org/snapshots</url>
+  	</repository>
+  	<repository>
+  	  <id>maven-lib</id>
+  	  <url>file://${basedir}/maven-lib</url>
+  	</repository>
+  	<repository>
+  	  <id>bukkit-repo</id>
+      <url>http://repo.bukkit.org/content/groups/public/</url>
   	</repository>
   </repositories>
   <dependencies>
@@ -75,5 +81,20 @@
 	  <version>1.15</version>
 	  <scope>compile</scope>
 	</dependency>
+	<dependency>
+	  <groupId>org.jnbt</groupId>
+	  <artifactId>jnbt</artifactId>
+	  <version>1.4</version>
+	</dependency>
+	<dependency>
+	  <groupId>com.google.code.gson</groupId>
+	  <artifactId>gson</artifactId>
+	  <version>2.3.1</version>
+	</dependency>
+	<dependency>
+      <groupId>org.bukkit</groupId>
+      <artifactId>bukkit</artifactId>
+      <version>1.8-R0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 </project>

@@ -39,9 +39,7 @@
               <goal>shade</goal>
             </goals>
             <configuration>
-              <artifactSet>
-                <excludes />
-              </artifactSet>
+              <artifactSet />
             </configuration>
           </execution>
         </executions>
@@ -52,6 +50,14 @@
     <repository>
       <id>apache-snapshot-repo</id>
       <url>http://repository.apache.org/snapshots</url>
+    </repository>
+    <repository>
+      <id>maven-lib</id>
+      <url>file://${basedir}/maven-lib</url>
+    </repository>
+    <repository>
+      <id>bukkit-repo</id>
+      <url>http://repo.bukkit.org/content/groups/public/</url>
     </repository>
   </repositories>
 </project>
