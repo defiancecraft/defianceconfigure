@@ -467,7 +467,7 @@ public class EnderChestMigrator implements Migrator {
 		DBObject ret = new BasicDBObject(ConfigurationSerialization.SERIALIZED_TYPE_KEY, "Color");
 		
 		ret.put("RED", color >> 16);
-		ret.put("GREEN", (color >> 8) & 0xFFFF);
+		ret.put("GREEN", (color >> 8) & 0xFF);
 		ret.put("BLUE", color & 0xFF);
 
 		return ret;
