@@ -4,7 +4,7 @@
   <groupId>com.defiancecraft</groupId>
   <artifactId>DefianceConfigure</artifactId>
   <name>DefianceConfigure</name>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <description>Command line utility to configure servers, databases, etc.</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
